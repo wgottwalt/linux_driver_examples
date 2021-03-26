@@ -1,5 +1,6 @@
 ccflags-y = -DEXPORT_SYMTAB -Wall -Werror
 obj-m := acpi-get-gpio.o
+obj-m += acpi-gpio-pps-client.o
 
 KDIR := /lib/modules/$(shell uname -r)/build/
 PWD := $(shell pwd)
