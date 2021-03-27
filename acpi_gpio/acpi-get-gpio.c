@@ -15,7 +15,7 @@
 
 static char *gpio_name = GPIO_NAME;
 module_param(gpio_name, charp, 0444);
-MODULE_PARM_DESC(gpio_name, "unique GPIO name to acquire (default: 'GPIO00')");
+MODULE_PARM_DESC(gpio_name, "unique GPIO name to acquire (default: '" GPIO_NAME "')");
 
 struct acpi_get_gpio_data {
 	struct device *dev;

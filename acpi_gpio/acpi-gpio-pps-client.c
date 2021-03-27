@@ -14,14 +14,16 @@
 
 #define DRIVER_NAME		"acpi_gpio_pps_client"
 #define MAX_GPIOS		8
+#define GPIO_MASK		1
 
 static const char *const gpio_names[MAX_GPIOS] = {
 	"GPIO00", "GPIO01", "GPIO02", "GPIO03", "GPIO4", "GPIO5", "GPIO06", "GPIO07",
 };
 
-static int gpios_mask = 1;
+static int gpios_mask = GPIO_MASK;
 module_param(gpios_mask, int, 0444);
-MODULE_PARM_DESC(gpios_mask, "bitmask of GPIOs to setup as PPS sources (default: 1 max 255)");
+MODULE_PARM_DESC(gpios_mask, "bitmask of GPIOs to setup as PPS sources (default: "
+		 __MODULE_STRING(GPIO_MASK) " max 255)");
 
 struct acpi_gpio_pps_client_device_data {
 	struct gpio_desc *gpio;
