@@ -1,1 +1,1 @@
-ADD_EXECUTABLE        (${CMAKE_PROJECT_NAME} Main.cxx)
+ADD_EXECUTABLE        (${CMAKE_PROJECT_NAME} Main.cxx PPS.cxx)
