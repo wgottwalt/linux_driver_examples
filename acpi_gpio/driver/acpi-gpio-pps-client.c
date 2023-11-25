@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
+// SPDX-License-Identifier: GPL-2.0-only
 /*
  * gpio-pps-client - pps client driver for multiple GPIOs
- * Copyright (C) 2021 Wilken 'Akiko' Gottwalt
+ * Copyright (C) 2021 Wilken Gottwalt
  */
 
 #include <linux/acpi.h>
@@ -12,9 +12,9 @@
 #include <linux/platform_device.h>
 #include <linux/pps_kernel.h>
 
-#define DRIVER_NAME		"acpi_gpio_pps_client"
-#define MAX_GPIOS		8
-#define GPIO_MASK		1
+#define DRIVER_NAME	"acpi_gpio_pps_client"
+#define MAX_GPIOS	8
+#define GPIO_MASK	1
 
 static const char *const gpio_names[MAX_GPIOS] = {
 	"GPIO00", "GPIO01", "GPIO02", "GPIO03", "GPIO4", "GPIO5", "GPIO06", "GPIO07",
@@ -171,7 +171,7 @@ static struct platform_driver acpi_gpio_pps_client_driver = {
 };
 module_platform_driver(acpi_gpio_pps_client_driver);
 
-MODULE_AUTHOR("Wilken 'Akiko' Gottwalt");
+MODULE_AUTHOR("Wilken Gottwalt");
 MODULE_DESCRIPTION("pps client driver for multiple GPIOs");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("acpi-gpio-pps-client");

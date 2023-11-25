@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
+// SPDX-License-Identifier: GPL-2.0-only
 /*
  * acpi-get-gpio - a simple test driver for acquiring a GPIO from an ACPI node
- * Copyright (C) 2021 Wilken 'Akiko' Gottwalt
+ * Copyright (C) 2021 Wilken Gottwalt
  */
 
 #include <linux/acpi.h>
@@ -72,7 +72,7 @@ static struct platform_driver acpi_get_gpio_driver = {
 };
 module_platform_driver(acpi_get_gpio_driver);
 
-MODULE_AUTHOR("Wilken 'Akiko' Gottwalt");
+MODULE_AUTHOR("Wilken Gottwalt");
 MODULE_DESCRIPTION("test driver for acquiring a GPIO from ACPI node");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("acpi-get-gpio");

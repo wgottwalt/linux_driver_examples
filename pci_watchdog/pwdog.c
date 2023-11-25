@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
+// SPDX-License-Identifier: GPL-2.0-only
 /*
  * pwdog - a simple PCI driver von Quancom watchdog cards
- * Copyright (C) 2021 Wilken 'Akiko' Gottwalt
+ * Copyright (C) 2021 Wilken Gottwalt
  */
 
 #include <linux/kernel.h>
@@ -186,6 +186,6 @@ static struct pci_driver pwdog_driver = {
 };
 module_pci_driver(pwdog_driver);
 
-MODULE_AUTHOR("Wilken 'Akiko' Gottwalt");
+MODULE_AUTHOR("Wilken Gottwalt");
 MODULE_DESCRIPTION("simple PCI driver for PCI Quancom watchdog cards");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL v2");

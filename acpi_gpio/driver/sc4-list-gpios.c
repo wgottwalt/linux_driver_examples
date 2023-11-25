@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0-or-later
+// SPDX-License-Identifier: GPL-2.0-only
 /*
  * sc4-list-gpios - test driver for mapping Smartcamera 4 GPIOs from ACPI tables to sysfs
- * Copyright (C) 2021 JENOPTIK Robot GmbH (Wilken Gottwalt <wilken.gottwalt@jenoptik.com>)
+ * Copyright (C) 2021 Wilken Gottwalt
  */
 
 #include <linux/acpi.h>
@@ -329,7 +329,7 @@ static struct platform_driver sc4_list_gpios_driver = {
 };
 module_platform_driver(sc4_list_gpios_driver);
 
-MODULE_AUTHOR("Wilken Gottwalt <wilken.gottwalt@jenoptik.com>");
+MODULE_AUTHOR("Wilken Gottwalt");
 MODULE_DESCRIPTION("test driver for mapping Smartcamera 4 GPIOs from ACPI tables to sysfs");
-MODULE_LICENSE("GPL");
+MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("sc4-list-gpios");
